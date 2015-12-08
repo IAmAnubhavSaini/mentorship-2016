@@ -1,0 +1,31 @@
+@import 'colors';
+
+.back {
+  &.light {
+    background-color: $color-light;
+  }
+  &.heading {
+    background-color: $color-heading;
+  }
+  &.emphasized {
+    background-color: $color-emphasized;
+  }
+  &.emphasized-light {
+    background-color: $color-emphasized-light;
+  }
+  &.dark {
+    background-color: $color-dark;
+  }
+}
+
+header span.topbar {
+  padding-top: .25%;
+  padding-bottom: .25%;
+}
+
+header span.topbar.back {
+  &.light { padding-left: 5%; padding-right: 5%; }
+  &.heading { padding-left: 17.5%; padding-right: 17.5%; }
+  &.emphasized { padding-left: 7.5%; padding-right: 7.5%; }
+  &.dark { padding-left: 20%; padding-right: 20%; }
+}

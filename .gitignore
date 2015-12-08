@@ -3,4 +3,5 @@
 node_modules/
 .sass-cache/
 Dist/
+res/
 
