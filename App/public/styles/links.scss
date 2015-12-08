@@ -1,5 +1,9 @@
+@import 'colors';
+
 a {
   text-decoration: none;
+  padding: 1em;
+  color: $blue;
 
   .heading & {
     font-size: 2em;
@@ -17,6 +21,6 @@ a {
     font-size: .5em;
   }
   &:hover {
-    border: thin solid #333;
+    border-bottom: thin solid $black;
   }
 }

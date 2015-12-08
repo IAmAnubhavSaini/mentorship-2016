@@ -41,8 +41,8 @@ header span.topbar {
 
 header span.topbar.back {
   &.light { padding-left: 5%; padding-right: 5%; }
-  &.heading { padding-left: 17.5%; padding-right: 17.5%; }
-  &.emphasized { padding-left: 7.5%; padding-right: 7.5%; }
+  &.heading { padding-left: 16%; padding-right: 16%; }
+  &.emphasized { padding-left: 9%; padding-right: 9%; }
   &.dark { padding-left: 20%; padding-right: 20%; }
 }
 
@@ -97,5 +97,5 @@ ol.roman-cap {
 
 footer {
   background-color: $white;
-  padding: 5%;
+  padding: 5% 1%;
 }
