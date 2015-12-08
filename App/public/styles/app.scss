@@ -1,5 +1,21 @@
 @import 'colors';
 
+.light {
+  color: $color-light;
+}
+.heading {
+  color: $color-heading;
+}
+.emphasized {
+  color: $color-emphasized;
+}
+.emphasized-light {
+  color: $color-emphasized-light;
+}
+.dark {
+  color: $color-dark;
+}
+
 .back {
   &.light {
     background-color: $color-light;
@@ -28,4 +44,58 @@ header span.topbar.back {
   &.heading { padding-left: 17.5%; padding-right: 17.5%; }
   &.emphasized { padding-left: 7.5%; padding-right: 7.5%; }
   &.dark { padding-left: 20%; padding-right: 20%; }
+}
+
+section {
+  margin: 15% 5%;
+  padding: 2.5%;
+  
+  &.landing {
+    text-align: center;
+
+    div {
+      margin: 10% 0;
+    }
+  }
+
+  &.content {
+    font-size: 1.2em;
+    h1 {
+      margin: 3% 0;
+    }
+    .item {
+      margin: 5% 0;
+    }
+  }
+}
+
+hr.limited-rule {
+  width: 5%;
+}
+
+.big {
+  font-size: 4em;
+}
+
+.heavy {
+  font-weight: bold;
+}
+
+.light {
+  font: {
+    weight: lighter;
+  }
+}
+
+.sub-text {
+  font-size: 1.7em;
+}
+
+ol.roman-cap {
+  list-style-type: upper-roman;
+}
+
+footer {
+  background-color: $white;
+  padding: 5%;
 }
