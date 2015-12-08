@@ -4,6 +4,7 @@ a {
   text-decoration: none;
   padding: 1em;
   color: $blue;
+  cursor: pointer;
 
   .heading & {
     font-size: 2em;
@@ -22,5 +23,9 @@ a {
   }
   &:hover {
     border-bottom: thin solid $black;
+  }
+  li & {
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }

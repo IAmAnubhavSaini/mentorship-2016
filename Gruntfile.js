@@ -42,6 +42,7 @@ module.exports = function(grunt) {
       dist: {
         files: {
           'Dist/index.html': 'App/index.haml',
+          'Dist/firststep.html': 'App/firststep.haml',
         }
       }
     },
@@ -52,6 +53,9 @@ module.exports = function(grunt) {
       },
       images: {
         files: [{expand: true, cwd: 'App/public/images', src: ['*'], dest: 'Dist/public/images/'}]
+      },
+      docs: {
+        files: [{expand: true, cwd: 'App/public/docs', src:['*'], dest: 'Dist/public/docs/'}]
       }
     },
 

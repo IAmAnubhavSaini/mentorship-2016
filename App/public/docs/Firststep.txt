@@ -1,0 +1,55 @@
+﻿For mentorship 2016 project.
+
+
+
+
+Questions that you need to answer. Things you need to do. Create a document. Share it with me. The goal of this document and exercise is to check your communication and social skills. Get on it.
+
+
+1. About yourself. 
+   1. Where are you from? Country, state, city?
+   2. What do you do?
+   3. What does your family do?
+   4. What is your experience about life till now?
+   5. What you want to do with your life and those that are around you?
+1. Your online footprint.
+   1. GitHub - create account if don’t already have one.
+   2. Skype - create account if don’t already have one.
+   3. FaceBook
+   4. Twitter  - create account if don’t already have one.
+   5. LinkedIn  - create account if don’t already have one.
+   6. SPOJ
+   7. JSFiddle  - create account if don’t already have one.
+   8. HackerEarth
+   9. HackerRank
+   10. ProjectEuler
+   11. Personal website
+   12. Blog - create account if don’t already have one.
+   13. Anything else?
+1. What is your experience in programming?
+   1. What languages do you know?
+   2. How long have you been coding?
+   3. What sort of problems you like to solve?
+1. Setup your system
+   1. Offline
+      1. Install git
+      2. Install npm
+      3. Install Sublime Text 3
+      4. Install a time tracker application - hamster for ubuntu
+      5. Install a todo application - Google Keep, Getting things Gnome etc,
+      6. Install a free hand note taking app - Microsoft OneNote, Xournal etc.
+      7. Install FireFox normal, FireFox for developers, Thunderbird.
+   1. Online - Get accounts on:
+      1. GitHub
+      2. Skype
+      3. Twitter
+      4. LinkedIn
+      5. JSFiddle
+      6. Codepen.io
+      7. StackOverFlow.com
+      8. A blog on wordpress or blogger.
+1. Preparation
+   1. Ditch mouse as much as possible. Learn to use keyboard shortcuts.
+   2. Start bookmarking sites that make interests you.
+   3. Be open to not knowing something and then learning it.
+   4. Treat others the way you’d like them to treat you.
