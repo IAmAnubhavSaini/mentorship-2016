@@ -1,80 +1,74 @@
 <!DOCTYPE html>
-<head>
-  <meta charset='utf-8'>
-  <meta content='IE=Edge' http-equiv='X-UA-Compatible'>
-  <meta name='viewport' content='width=device-width, initial-scale=1' />
-  <title>Mentorship 2016</title>
-  <link href='./public/styles/app.min.css' rel='stylesheet' type='text/css'>
-  <link href='./public/styles/links.min.css' rel='stylesheet' type='text/css'>
-  <link href='./public/styles/borders.min.css' rel='stylesheet' type='text/css'>
-</head>
-<body>
-  <header>
-    <span class='topbar back light'></span>
-    <span class='topbar back emphasized'></span>
-    <span class='topbar back heading'></span>
-    <span class='topbar back dark'></span>
-  </header>
-  <section class='landing dark'>
-    <h1 class='heavy big'>Mentorship - 2016</h1>
-    <h4 class='light'>Dec.08.2015</h4>
-    <hr class='limited-rule'>
-    <div class='sub-text'>A year long adventure into programming.</div>
-    <h4 class='emphasized'>Anubhav Saini</h4>
-    <h3 class='heavy'>t/@iamanubhavsaini</h3>
-  </section>
-  <section class='content'>
-    <div class='item'>
-      <h1 class='heading heavy'>Overview</h1>
-      <p class='dark'>This is my way of giving back to programming community. There is no catch. You have questions that you think people will make fun of, ask me. You find learning to program hard, talk to me. You want to learn to be able to solve problems and do cool stuff, raise your hand.</p>
+<html ng-app='mentorshipApp'>
+  <head>
+    <meta charset='utf-8'>
+    <meta content='IE=Edge' http-equiv='X-UA-Compatible'>
+    <meta name='viewport' content='width=device-width, initial-scale=1' />
+    <title>Mentorship 2016</title>
+    <link href='./public/styles/app.min.css' rel='stylesheet' type='text/css'>
+    <link href='./public/styles/links.min.css' rel='stylesheet' type='text/css'>
+    <link href='./public/styles/borders.min.css' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <header>
+      <span class='topbar back light'></span>
+      <span class='topbar back emphasized'></span>
+      <span class='topbar back heading'></span>
+      <span class='topbar back dark'></span>
+    </header>
+    <section class='landing dark'>
+      <h1 class='heavy big'>Mentorship - 2016</h1>
+      <h4 class='light'>Dec.08.2015</h4>
+      <hr class='limited-rule'>
+      <div class='sub-text'>A year long adventure into programming.</div>
+      <h4 class='emphasized'>Anubhav Saini</h4>
+      <h3 class='heavy'>t/@iamanubhavsaini</h3>
+    </section>
+    <section class='content'>
+      <div class='item'>
+        <h1 class='heading heavy'>Overview</h1>
+        <p class='dark'>This is my way of giving back to programming community. There is no catch. You have questions that you think people will make fun of, ask me. You find learning to program hard, talk to me. You want to learn to be able to solve problems and do cool stuff, raise your hand.</p>
+      </div>
+      <div class='item'>
+        <h1 class='heading heavy'>Goals</h1>
+        <ol class='dark'>
+          <li>Mentoring new students who want to learn programming but cannot because of any reason.</li>
+          <li>Learning in an environment where everyone wants to learn with same ferocity.</li>
+          <li>HTML | CSS | JavaScript | General Purpose Programming.</li>
+        </ol>
+      </div>
+      <div class='item'>
+        <h1 class='heading heavy'>Specifications</h1>
+        <p class='dark'>Read about stuff that you learned today. Think how you solved a problem. Figure out how things connect to form solutions. Ask yourself how can you make your code better. Have a problem to solve at your fingertips, always.</p>
+      </div>
+      <div class='item'>
+        <h2 class='emphasized heavy'>Do not copy.</h2>
+        <p class='dark'>You can ask for general directions, but please do not ask me or others to solve your problems for you. You have to build your own solutions, your own concepts, your own understandings. You have to challenge yourself. Do not copy other’s answers. That’ll kick you out of the program.</p>
+      </div>
+      <div class='item'>
+        <h1 class='heading heavy'>Milestones</h1>
+        <ol class='emphasized roman-cap'>
+          <li>Being able to understand a problem.</li>
+          <p class='dark'>Learning what the problem is a great first step towards solving it.</p>
+          <li>Being able to come up with multiple solutions.</li>
+          <p class='dark'>Only after you have understood your problem, you will be able to come up with solution even many of them.</p>
+        </ol>
+      </div>
+      <a href='./firststep.html'>First Step</a>
+    </section>
+    <section class='downloads' ng-controller='downloadLinksController as downloadLinks'>
+      <h3 class='dark heavy'>Downloads</h3>
+      <div class='item' ng-repeat='item in downloadLinks.links'>
+        {{ item.item }}
+        <a href='{{ link.href }}' ng-repeat='link in item.links'>{{ link.text }}</a>
+      </div>
+    </section>
+    <footer ng-controller='footerLinksController as footerLinks'>
+      <a href='{{ link.href }}' ng-repeat='link in footerLinks.links'>{{ link.text }}</a>
+    </footer>
+    <div id='scripts'>
+      <script src='./public/scripts/angular.min.js'></script>
+      <script src='./public/scripts/app.min.js'></script>
     </div>
-    <div class='item'>
-      <h1 class='heading heavy'>Goals</h1>
-      <ol class='dark'>
-        <li>Mentoring new students who want to learn programming but cannot because of any reason.</li>
-        <li>Learning in an environment where everyone wants to learn with same ferocity.</li>
-        <li>HTML | CSS | JavaScript | General Purpose Programming.</li>
-      </ol>
-    </div>
-    <div class='item'>
-      <h1 class='heading heavy'>Specifications</h1>
-      <p class='dark'>Read about stuff that you learned today. Think how you solved a problem. Figure out how things connect to form solutions. Ask yourself how can you make your code better. Have a problem to solve at your fingertips, always.</p>
-    </div>
-    <div class='item'>
-      <h2 class='emphasized heavy'>Do not copy.</h2>
-      <p class='dark'>You can ask for general directions, but please do not ask me or others to solve your problems for you. You have to build your own solutions, your own concepts, your own understandings. You have to challenge yourself. Do not copy other’s answers. That’ll kick you out of the program.</p>
-    </div>
-    <div class='item'>
-      <h1 class='heading heavy'>Milestones</h1>
-      <ol class='emphasized roman-cap'>
-        <li>Being able to understand a problem.</li>
-        <p class='dark'>Learning what the problem is a great first step towards solving it.</p>
-        <li>Being able to come up with multiple solutions.</li>
-        <p class='dark'>Only after you have understood your problem, you will be able to come up with solution even many of them.</p>
-      </ol>
-    </div>
-    <a href='./firststep.html'>First Step</a>
-  </section>
-  <section class='downloads'>
-    <h3 class='dark heavy'>Downloads</h3>
-    <div class='item'>
-      First step:
-      <a href='./public/docs/firststep.docx'>DOCX - MS Office</a>
-      <a href='./public/docs/firststep.odt'>ODT - Open Document Type</a>
-      <a href='./public/docs/firststep.pdf'>PDF</a>
-      <a href='./public/docs/firststep.txt'>Text Format</a>
-    </div>
-    <div class='item'>
-      <a href='./public/images/Projectproposal-Mentorship2016.pdf'>Project Proposal PDF</a>
-    </div>
-  </section>
-  <footer>
-    <a href='http://twitter.com/iamanubhavsaini'>@iamanubhavsaini</a>
-    <a href='https://www.facebook.com/groups/550470681784924'>Group</a>
-    <a href='https://drive.google.com/open?id=0B2HdMWV_X6CCTjIzNWVfRFk3N0E'>Drive</a>
-  </footer>
-  <div id='scripts'>
-    <script src='./public/scripts/app.min.js'></script>
-    <script src='./public/scripts/jquery-2.1.4.min.js'></script>
-  </div>
-</body>
+  </body>
+</html>
