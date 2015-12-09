@@ -9,7 +9,7 @@
     <link href='./public/styles/links.min.css' rel='stylesheet' type='text/css'>
     <link href='./public/styles/borders.min.css' rel='stylesheet' type='text/css'>
   </head>
-  <body>
+  <body ng-controller='indexDataController as data'>
     <header>
       <span class='topbar back light'></span>
       <span class='topbar back emphasized'></span>
@@ -25,9 +25,9 @@
       <h3 class='heavy'>t/@iamanubhavsaini</h3>
     </section>
     <section class='content'>
-      <div class='item'>
-        <h1 class='heading heavy'>Overview</h1>
-        <p class='dark'>This is my way of giving back to programming community. There is no catch. You have questions that you think people will make fun of, ask me. You find learning to program hard, talk to me. You want to learn to be able to solve problems and do cool stuff, raise your hand.</p>
+      <div class='item' ng-repeat='item in data.contentData'>
+        <h1 class='heading heavy'>{{ item.heading }}</h1>
+        <p class='dark'>{{ item.text }}</p>
       </div>
       <div class='item'>
         <h1 class='heading heavy'>Goals</h1>
@@ -36,14 +36,6 @@
           <li>Learning in an environment where everyone wants to learn with same ferocity.</li>
           <li>HTML | CSS | JavaScript | General Purpose Programming.</li>
         </ol>
-      </div>
-      <div class='item'>
-        <h1 class='heading heavy'>Specifications</h1>
-        <p class='dark'>Read about stuff that you learned today. Think how you solved a problem. Figure out how things connect to form solutions. Ask yourself how can you make your code better. Have a problem to solve at your fingertips, always.</p>
-      </div>
-      <div class='item'>
-        <h2 class='emphasized heavy'>Do not copy.</h2>
-        <p class='dark'>You can ask for general directions, but please do not ask me or others to solve your problems for you. You have to build your own solutions, your own concepts, your own understandings. You have to challenge yourself. Do not copy other’s answers. That’ll kick you out of the program.</p>
       </div>
       <div class='item'>
         <h1 class='heading heavy'>Milestones</h1>
@@ -56,19 +48,20 @@
       </div>
       <a href='./firststep.html'>First Step</a>
     </section>
-    <section class='downloads' ng-controller='downloadLinksController as downloadLinks'>
+    <section class='downloads'>
       <h3 class='dark heavy'>Downloads</h3>
-      <div class='item' ng-repeat='item in downloadLinks.links'>
+      <div class='item' ng-repeat='item in data.downloadLinks'>
         {{ item.item }}
         <a href='{{ link.href }}' ng-repeat='link in item.links'>{{ link.text }}</a>
       </div>
     </section>
-    <footer ng-controller='footerLinksController as footerLinks'>
-      <a href='{{ link.href }}' ng-repeat='link in footerLinks.links'>{{ link.text }}</a>
+    <footer>
+      <a href='{{ link.href }}' ng-repeat='link in data.footerLinks'>{{ link.text }}</a>
     </footer>
     <div id='scripts'>
       <script src='./public/scripts/angular.min.js'></script>
       <script src='./public/scripts/app.min.js'></script>
+      <script src='./public/scripts/app.index.min.js'></script>
     </div>
   </body>
 </html>

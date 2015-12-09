@@ -9,7 +9,7 @@
     <link href='./public/styles/links.min.css' rel='stylesheet' type='text/css'>
     <link href='./public/styles/borders.min.css' rel='stylesheet' type='text/css'>
   </head>
-  <body>
+  <body ng-controller='firststepDataController as data'>
     <header>
       <span class='topbar back light'></span>
       <span class='topbar back emphasized'></span>
@@ -31,40 +31,10 @@
       <div class='item'>
         <p class='dark'>Questions that you need to answer. Things you need to do. Create a document. Share it with me. The goal of this document and exercise is to check your communication and social skills. Get on it.</p>
       </div>
-      <div class='item'>
-        <h1 class='heading heavy'>About yourself.</h1>
+      <div class='item' ng-repeat='item in data.simpleContentList'>
+        <h1 class='heading heavy'>{{ item.heading }}</h1>
         <ol class='dark'>
-          <li>Where are you from? Country, state, city?</li>
-          <li>What do you do?</li>
-          <li>What does your family do?</li>
-          <li>What is your experience about life till now?</li>
-          <li>What you want to do with your life and those that are around you?</li>
-        </ol>
-      </div>
-      <div class='item'>
-        <h1 class='heading heavy'>Your online footprint.</h1>
-        <ol class='dark'>
-          <li>GitHub - create account if don’t already have one.</li>
-          <li>Skype - create account if don’t already have one.</li>
-          <li>FaceBook</li>
-          <li>Twitter  - create account if don’t already have one.</li>
-          <li>LinkedIn  - create account if don’t already have one.</li>
-          <li>SPOJ</li>
-          <li>JSFiddle  - create account if don’t already have one.</li>
-          <li>HackerEarth</li>
-          <li>HackerRank</li>
-          <li>ProjectEuler</li>
-          <li>Personal website</li>
-          <li>Blog - create account if don’t already have one.</li>
-          <li>Anything else?</li>
-        </ol>
-      </div>
-      <div class='item'>
-        <h1 class='heading heavy'>What is your experience in programming?</h1>
-        <ol class='dark'>
-          <li>What languages do you know?</li>
-          <li>How long have you been coding?</li>
-          <li>What sort of problems you like to solve?</li>
+          <li ng-repeat='listItem in item.list'>{{ listItem }}</li>
         </ol>
       </div>
       <div class='item'>
@@ -97,30 +67,22 @@
           </li>
         </ol>
       </div>
-      <div class='item'>
-        <h1 class='heading heavy'>Preparation</h1>
-        <ol class='dark'>
-          <li>Ditch mouse as much as possible. Learn to use keyboard shortcuts.</li>
-          <li>Start bookmarking sites that make interests you.</li>
-          <li>Be open to not knowing something and then learning it.</li>
-          <li>Treat others the way you’d like them to treat you.</li>
-        </ol>
-      </div>
       <a href='./index.html'>Home Page</a>
     </section>
-    <section class='downloads' ng-controller='downloadLinksController as downloadLinks'>
+    <section class='downloads'>
       <h3 class='dark heavy'>Downloads</h3>
-      <div class='item' ng-repeat='item in downloadLinks.links'>
+      <div class='item' ng-repeat='item in data.downloadLinks'>
         {{ item.item }}
         <a href='{{ link.href }}' ng-repeat='link in item.links'>{{ link.text }}</a>
       </div>
     </section>
-    <footer ng-controller='footerLinksController as footerLinks'>
-      <a href='{{ link.href }}' ng-repeat='link in footerLinks.links'>{{ link.text }}</a>
+    <footer>
+      <a href='{{ link.href }}' ng-repeat='link in data.footerLinks'>{{ link.text }}</a>
     </footer>
     <div id='scripts'>
       <script src='./public/scripts/angular.min.js'></script>
       <script src='./public/scripts/app.min.js'></script>
+      <script src='./public/scripts/app.firststep.min.js'></script>
     </div>
   </body>
 </html>
