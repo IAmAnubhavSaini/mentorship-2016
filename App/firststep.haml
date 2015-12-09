@@ -1,121 +1,115 @@
 !!!
-%head
-  %meta{'charset'=>'utf-8'}/
-  %meta{'http-equiv'=>'X-UA-Compatible', :'content'=>'IE=Edge'}/
-  <meta name='viewport' content='width=device-width, initial-scale=1' />
-  %title Welcome to First Step - Mentorship 2016 
-  %link{'rel'=>'stylesheet', :'type'=>'text/css',  :'href'=>'./public/styles/app.min.css'}/
-  %link{'rel'=>'stylesheet', :'type'=>'text/css',  :'href'=>'./public/styles/links.min.css'}/
-  %link{'rel'=>'stylesheet', :'type'=>'text/css',  :'href'=>'./public/styles/borders.min.css'}/
+%html{ :"ng-app"=>"mentorshipApp"}
+  %head
+    %meta{'charset'=>'utf-8'}/
+    %meta{'http-equiv'=>'X-UA-Compatible', :'content'=>'IE=Edge'}/
+    <meta name='viewport' content='width=device-width, initial-scale=1' />
+    %title Welcome to First Step - Mentorship 2016 
+    %link{'rel'=>'stylesheet', :'type'=>'text/css',  :'href'=>'./public/styles/app.min.css'}/
+    %link{'rel'=>'stylesheet', :'type'=>'text/css',  :'href'=>'./public/styles/links.min.css'}/
+    %link{'rel'=>'stylesheet', :'type'=>'text/css',  :'href'=>'./public/styles/borders.min.css'}/
 
-%body
-  %header
-    %span.topbar.back.light
-    %span.topbar.back.emphasized
-    %span.topbar.back.heading
-    %span.topbar.back.dark
+  %body
+    %header
+      %span.topbar.back.light
+      %span.topbar.back.emphasized
+      %span.topbar.back.heading
+      %span.topbar.back.dark
 
-  %section.landing.dark
-    %h1.heavy.big First step.
-    %h4.light It begins from here.
-    %hr.limited-rule/
-    .sub-text A year long adventure into programming.
-    %h4.emphasized Anubhav Saini
-    %h3.heavy t/@iamanubhavsaini
-    %h2.heavy
-      %a{ :href=>"./index.html" } Mentorship 2016
+    %section.landing.dark
+      %h1.heavy.big First step.
+      %h4.light It begins from here.
+      %hr.limited-rule/
+      .sub-text A year long adventure into programming.
+      %h4.emphasized Anubhav Saini
+      %h3.heavy t/@iamanubhavsaini
+      %h2.heavy
+        %a{ :href=>"./index.html" } Mentorship 2016
 
-  %section.content
-    .item
-      %p.dark Questions that you need to answer. Things you need to do. Create a document. Share it with me. The goal of this document and exercise is to check your communication and social skills. Get on it.
- 
-    .item
-      %h1.heading.heavy About yourself. 
-      %ol.dark
-        %li Where are you from? Country, state, city?
-        %li What do you do?
-        %li What does your family do?
-        %li What is your experience about life till now?
-        %li What you want to do with your life and those that are around you?
+    %section.content
+      .item
+        %p.dark Questions that you need to answer. Things you need to do. Create a document. Share it with me. The goal of this document and exercise is to check your communication and social skills. Get on it.
+   
+      .item
+        %h1.heading.heavy About yourself. 
+        %ol.dark
+          %li Where are you from? Country, state, city?
+          %li What do you do?
+          %li What does your family do?
+          %li What is your experience about life till now?
+          %li What you want to do with your life and those that are around you?
 
-    .item
-      %h1.heading.heavy Your online footprint.
-      %ol.dark
-        %li GitHub - create account if don’t already have one.
-        %li Skype - create account if don’t already have one.
-        %li FaceBook
-        %li Twitter  - create account if don’t already have one.
-        %li LinkedIn  - create account if don’t already have one.
-        %li SPOJ
-        %li JSFiddle  - create account if don’t already have one.
-        %li HackerEarth
-        %li HackerRank
-        %li ProjectEuler
-        %li Personal website
-        %li Blog - create account if don’t already have one.
-        %li Anything else?
+      .item
+        %h1.heading.heavy Your online footprint.
+        %ol.dark
+          %li GitHub - create account if don’t already have one.
+          %li Skype - create account if don’t already have one.
+          %li FaceBook
+          %li Twitter  - create account if don’t already have one.
+          %li LinkedIn  - create account if don’t already have one.
+          %li SPOJ
+          %li JSFiddle  - create account if don’t already have one.
+          %li HackerEarth
+          %li HackerRank
+          %li ProjectEuler
+          %li Personal website
+          %li Blog - create account if don’t already have one.
+          %li Anything else?
 
-    .item
-      %h1.heading.heavy What is your experience in programming? 
-      %ol.dark
-        %li What languages do you know?
-        %li How long have you been coding?
-        %li What sort of problems you like to solve?
+      .item
+        %h1.heading.heavy What is your experience in programming? 
+        %ol.dark
+          %li What languages do you know?
+          %li How long have you been coding?
+          %li What sort of problems you like to solve?
 
-    .item
-      %h1.heading.heavy Setup your system
-      %ol.dark
-        %li 
-          Offline
-          %ol
-            %li Install git
-            %li Install npm
-            %li Install Sublime Text 3
-            %li Install a time tracker application - hamster for ubuntu
-            %li Install a todo application - Google Keep, Getting things Gnome etc,
-            %li Install a free hand note taking app - Microsoft OneNote, Xournal etc.
-            %li Install FireFox normal, FireFox for developers, Thunderbird.
-        %li 
-          Online - Get accounts on:
-          %ol
-            %li GitHub
-            %li Skype
-            %li Twitter
-            %li LinkedIn
-            %li JSFiddle
-            %li Codepen.io
-            %li StackOverFlow.com
-            %li A blog on wordpress or blogger.
+      .item
+        %h1.heading.heavy Setup your system
+        %ol.dark
+          %li 
+            Offline
+            %ol
+              %li Install git
+              %li Install npm
+              %li Install Sublime Text 3
+              %li Install a time tracker application - hamster for ubuntu
+              %li Install a todo application - Google Keep, Getting things Gnome etc,
+              %li Install a free hand note taking app - Microsoft OneNote, Xournal etc.
+              %li Install FireFox normal, FireFox for developers, Thunderbird.
+          %li 
+            Online - Get accounts on:
+            %ol
+              %li GitHub
+              %li Skype
+              %li Twitter
+              %li LinkedIn
+              %li JSFiddle
+              %li Codepen.io
+              %li StackOverFlow.com
+              %li A blog on wordpress or blogger.
 
-    .item
-      %h1.heading.heavy Preparation
-      %ol.dark
-        %li Ditch mouse as much as possible. Learn to use keyboard shortcuts.
-        %li Start bookmarking sites that make interests you.
-        %li Be open to not knowing something and then learning it.
-        %li Treat others the way you’d like them to treat you.
+      .item
+        %h1.heading.heavy Preparation
+        %ol.dark
+          %li Ditch mouse as much as possible. Learn to use keyboard shortcuts.
+          %li Start bookmarking sites that make interests you.
+          %li Be open to not knowing something and then learning it.
+          %li Treat others the way you’d like them to treat you.
 
 
 
-    %a{:href=>"./index.html" } Home Page
+      %a{:href=>"./index.html" } Home Page
 
-  %section.downloads 
-    %h3.dark.heavy Downloads
-    .item
-      This document: 
-      %a{ :href=>"./public/docs/firststep.docx" }  DOCX - MS Office
-      %a{ :href=>"./public/docs/firststep.odt" }  ODT - Open Document Type
-      %a{ :href=>"./public/docs/firststep.pdf" }  PDF
-      %a{ :href=>"./public/docs/firststep.txt" }  Text Format
-    .item
-      %a{ :href=>"./public/images/Projectproposal-Mentorship2016.pdf" } Project Proposal PDF
+    %section.downloads{ :"ng-controller"=>"downloadLinksController as downloadLinks" }
+      %h3.dark.heavy Downloads
+      .item{ :"ng-repeat"=>"item in downloadLinks.links" }
+        {{ item.item }}
+        %a{ :"ng-repeat"=>"link in item.links", :href=>"{{ link.href }}" }  {{ link.text }}
 
-  %footer   
-    %a{ :href=>"http://twitter.com/iamanubhavsaini" } @iamanubhavsaini
-    %a{ :href=>"https://www.facebook.com/groups/550470681784924"} Group
-    %a{ :href=>"https://drive.google.com/open?id=0B2HdMWV_X6CCTjIzNWVfRFk3N0E"} Drive
+    %footer{ :"ng-controller"=>"footerLinksController as footerLinks" }
+      %a{ :"ng-repeat"=>"link in footerLinks.links", :href=>"{{ link.href }}" } {{ link.text }}
 
-  #scripts
-    %script{'src'=>'./public/scripts/app.min.js'}
-    %script{'src'=>'./public/scripts/jquery-2.1.4.min.js'}
-
+    #scripts
+      %script{ :'src'=>'./public/scripts/angular.min.js' }
+      %script{ :'src'=>'./public/scripts/app.min.js' }
+      
