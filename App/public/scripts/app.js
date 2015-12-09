@@ -1,20 +1,17 @@
-var app = angular.module("mentorshipApp", []);
+var mentorship2016 = mentorship2016 || {};
+if (window.mentorship2016 === undefined ){
+  window.mentorship2016 = mentorship2016;
+}
 
-app.controller("footerLinksController", function(){
-  this.links = footerLinks;
-});
+mentorship2016.common = mentorship2016.common || {};
 
-app.controller("downloadLinksController", function(){
-  this.links = downloadLinks;
-});
-
-var footerLinks = [
+mentorship2016.common.footerLinks = [
   { href:"http://twitter.com/iamanubhavsaini", text:"@iamanubhavsaini" },
   { href:"https://www.facebook.com/groups/mentorship2016/", text:"Group" },
   { href:"https://drive.google.com/open?id=0B2HdMWV_X6CCTjIzNWVfRFk3N0E", text:"Drive" },
 ];
 
-var downloadLinks = [
+mentorship2016.common.downloadLinks = [
   { item:"First step", 
       links: [
         { href:"./public/docs/firststep.docx", text:"DOCX - MS Office" },
@@ -29,3 +26,5 @@ var downloadLinks = [
       ]
   },
 ];
+
+mentorship2016.app = angular.module("mentorshipApp", []);

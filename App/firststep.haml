@@ -9,7 +9,7 @@
     %link{'rel'=>'stylesheet', :'type'=>'text/css',  :'href'=>'./public/styles/links.min.css'}/
     %link{'rel'=>'stylesheet', :'type'=>'text/css',  :'href'=>'./public/styles/borders.min.css'}/
 
-  %body
+  %body{ :"ng-controller"=>"firststepDataController as data"}
     %header
       %span.topbar.back.light
       %span.topbar.back.emphasized
@@ -30,38 +30,10 @@
       .item
         %p.dark Questions that you need to answer. Things you need to do. Create a document. Share it with me. The goal of this document and exercise is to check your communication and social skills. Get on it.
    
-      .item
-        %h1.heading.heavy About yourself. 
+      .item{ :"ng-repeat"=>"item in data.simpleContentList" }
+        %h1.heading.heavy {{ item.heading }} 
         %ol.dark
-          %li Where are you from? Country, state, city?
-          %li What do you do?
-          %li What does your family do?
-          %li What is your experience about life till now?
-          %li What you want to do with your life and those that are around you?
-
-      .item
-        %h1.heading.heavy Your online footprint.
-        %ol.dark
-          %li GitHub - create account if don’t already have one.
-          %li Skype - create account if don’t already have one.
-          %li FaceBook
-          %li Twitter  - create account if don’t already have one.
-          %li LinkedIn  - create account if don’t already have one.
-          %li SPOJ
-          %li JSFiddle  - create account if don’t already have one.
-          %li HackerEarth
-          %li HackerRank
-          %li ProjectEuler
-          %li Personal website
-          %li Blog - create account if don’t already have one.
-          %li Anything else?
-
-      .item
-        %h1.heading.heavy What is your experience in programming? 
-        %ol.dark
-          %li What languages do you know?
-          %li How long have you been coding?
-          %li What sort of problems you like to solve?
+          %li{ :"ng-repeat"=>"listItem in item.list" } {{ listItem }}
 
       .item
         %h1.heading.heavy Setup your system
@@ -88,28 +60,20 @@
               %li StackOverFlow.com
               %li A blog on wordpress or blogger.
 
-      .item
-        %h1.heading.heavy Preparation
-        %ol.dark
-          %li Ditch mouse as much as possible. Learn to use keyboard shortcuts.
-          %li Start bookmarking sites that make interests you.
-          %li Be open to not knowing something and then learning it.
-          %li Treat others the way you’d like them to treat you.
-
-
 
       %a{:href=>"./index.html" } Home Page
 
-    %section.downloads{ :"ng-controller"=>"downloadLinksController as downloadLinks" }
+    %section.downloads
       %h3.dark.heavy Downloads
-      .item{ :"ng-repeat"=>"item in downloadLinks.links" }
+      .item{ :"ng-repeat"=>"item in data.downloadLinks" }
         {{ item.item }}
         %a{ :"ng-repeat"=>"link in item.links", :href=>"{{ link.href }}" }  {{ link.text }}
 
-    %footer{ :"ng-controller"=>"footerLinksController as footerLinks" }
-      %a{ :"ng-repeat"=>"link in footerLinks.links", :href=>"{{ link.href }}" } {{ link.text }}
+    %footer
+      %a{ :"ng-repeat"=>"link in data.footerLinks", :href=>"{{ link.href }}" } {{ link.text }}
 
     #scripts
       %script{ :'src'=>'./public/scripts/angular.min.js' }
       %script{ :'src'=>'./public/scripts/app.min.js' }
+      %script{ :'src'=>'./public/scripts/app.firststep.min.js' }
       
