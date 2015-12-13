@@ -9,7 +9,7 @@ Resources
 
 
 
-How to run yourself.
+How to run it yourself.
 -
 
 > `git clone` the repo.  
