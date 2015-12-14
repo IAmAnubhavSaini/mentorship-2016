@@ -1,0 +1,172 @@
+﻿Second Step
+
+
+
+
+For mentorship 2016 project.
+
+
+Questions that you need to answer. Things you need to do. Create a document. Share it with me. The goal of this document and exercise is to check your planning and time management skills. We have one full year ahead of ourselves. What is that you want to do with it and how?
+
+
+________________
+
+
+Plan your year.
+1. Take a few steps back and look at the whole year.
+2. What is that you want to learn by the end of 2016?
+3. What programming skills would like to have?
+4. How much time in total will you have to learn yourself?
+5. Tell me what it is. I might point out flaws or give suggestions about your plan.
+Break your year in 24 equal pieces.
+1. Divide whole year in 2 week long pieces.
+2. Some weeks will have more work and some will will have more vacations.
+3. Create a personal calendar, on paper or online.
+Plan your year again.
+1. Reduce the commitment you made above by 75%.
+2. You cannot learn everything in one year, but you can learn one or two things very well. Pick them.
+3. Plan to read and implement. Studying alone is not sufficient.
+4. Give me your calendar that has your plan. Online or document.
+What are the things you want to learn.
+1. Create a separate document that lists the things you hope to learn.
+2. In that document, list the things that you really want to learn.
+Suggest some projects.
+1. What sort of projects do you want to build?
+2. Suggest at least 12 projects - look online for the small projects that other people have created.
+
+
+________________
+
+
+Questions
+1. What questions do you want to ask about me?
+2. What questions do you want to ask about the program?
+3. What questions do you want to ask about programming?
+4. What questions do you want to ask about work, job etc?
+5. Really ask anything. Put your questions in a separate document and send or share it with me.
+Starting on 1st of January.
+1. Since, we are starting next month, I'd like to know about your system configuration.
+2. Tell me if you need help in setting up git or any other tool.
+3. I do not want you to play catch, so setup your computers before we being.
+
+
+
+
+________________
+
+
+Thanks!
+1. Tell your friends about the program. Learning becomes effective, fun and easy when family and friends are involved.
+
+
+
+
+Send answer document via email with subject: mentorship 2016 - or - share with google drive.
+It’d be good if you kept the questions and answered below them. Thanks.
+
+
+________________
+
+
+Example breakup of year:
+
+
+
+
+Week 1 and 2
+	W5,6
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	W 3,4
+	W 7,8
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+or
+
+
+
+
+Jan
+	Feb
+	Mar
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+________________
+
+
+
+
+Example projects:
+
+
+1. Personal blog
+2. Personal site
+3. Game in CSS, JavaScript
+4. Contacts application in C or JavaScript
+
+
+A version of this document is available at : http://iamanubhavsaini.github.io/mentorship-2016/secondstep.html

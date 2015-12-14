@@ -43,6 +43,7 @@ module.exports = function(grunt) {
         files: {
           'Dist/index.html': 'App/index.haml',
           'Dist/firststep.html': 'App/firststep.haml',
+          'Dist/secondstep.html': 'App/secondstep.haml',
         }
       }
     },

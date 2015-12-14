@@ -14,10 +14,18 @@ mentorship2016.common.footerLinks = [
 mentorship2016.common.downloadLinks = [
   { item:"First step", 
       links: [
-        { href:"./public/docs/firststep.docx", text:"DOCX - MS Office" },
-        { href:"./public/docs/firststep.odt", text:"ODT - Open Document Type" },
-        { href:"./public/docs/firststep.pdf", text:"PDF" },
-        { href:"./public/docs/firststep.txt", text:"Text Format" }
+        { href:"./public/docs/Firststep.docx", text:"DOCX - MS Office" },
+        { href:"./public/docs/Firststep.odt", text:"ODT - Open Document Type" },
+        { href:"./public/docs/Firststep.pdf", text:"PDF" },
+        { href:"./public/docs/Firststep.txt", text:"Text Format" }
+      ]
+  },
+  { item:"Second step", 
+      links: [
+        { href:"./public/docs/Secondstep.docx", text:"DOCX - MS Office" },
+        { href:"./public/docs/Secondstep.odt", text:"ODT - Open Document Type" },
+        { href:"./public/docs/Secondstep.pdf", text:"PDF" },
+        { href:"./public/docs/Secondstep.txt", text:"Text Format" }
       ]
   },
   { item:"Project Proposal", 
