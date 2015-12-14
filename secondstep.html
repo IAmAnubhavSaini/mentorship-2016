@@ -4,12 +4,12 @@
     <meta charset='utf-8'>
     <meta content='IE=Edge' http-equiv='X-UA-Compatible'>
     <meta name='viewport' content='width=device-width, initial-scale=1' />
-    <title>Mentorship 2016</title>
+    <title>Welcome to Second Step - Mentorship 2016</title>
     <link href='./public/styles/app.min.css' rel='stylesheet' type='text/css'>
     <link href='./public/styles/links.min.css' rel='stylesheet' type='text/css'>
     <link href='./public/styles/borders.min.css' rel='stylesheet' type='text/css'>
   </head>
-  <body ng-controller='indexDataController as data'>
+  <body ng-controller='secondstepDataController as data'>
     <header>
       <span class='topbar back light'></span>
       <span class='topbar back emphasized'></span>
@@ -17,37 +17,28 @@
       <span class='topbar back dark'></span>
     </header>
     <section class='landing dark'>
-      <h1 class='heavy big'>Mentorship - 2016</h1>
-      <h4 class='light'>Dec.08.2015</h4>
+      <h1 class='heavy big'>Second step.</h1>
+      <h4 class='light'>Getting ready for the year ahead.</h4>
       <hr class='limited-rule'>
       <div class='sub-text'>A year long adventure into programming.</div>
       <h4 class='emphasized'>Anubhav Saini</h4>
       <h3 class='heavy'>t/@iamanubhavsaini</h3>
+      <h2 class='heavy'>
+        <a href='./index.html'>Mentorship 2016</a>
+      </h2>
     </section>
     <section class='content'>
-      <div class='item' ng-repeat='item in data.contentData'>
+      <div class='item'>
+        <p class='dark'>Questions that you need to answer. Things you need to do. Create a document. Share it with me. The goal of this document and exercise is to check your planning and time management skills. We have one full year ahead of ourselves. What is that you want to do with it and how?</p>
+      </div>
+      <div class='item' ng-repeat='item in data.simpleContentList'>
         <h1 class='heading heavy'>{{ item.heading }}</h1>
-        <p class='dark'>{{ item.text }}</p>
-      </div>
-      <div class='item'>
-        <h1 class='heading heavy'>Goals</h1>
         <ol class='dark'>
-          <li>Mentoring new students who want to learn programming but cannot because of any reason.</li>
-          <li>Learning in an environment where everyone wants to learn with same ferocity.</li>
-          <li>HTML | CSS | JavaScript | General Purpose Programming.</li>
-        </ol>
-      </div>
-      <div class='item'>
-        <h1 class='heading heavy'>Milestones</h1>
-        <ol class='emphasized roman-cap'>
-          <li>Being able to understand a problem.</li>
-          <p class='dark'>Learning what the problem is a great first step towards solving it.</p>
-          <li>Being able to come up with multiple solutions.</li>
-          <p class='dark'>Only after you have understood your problem, you will be able to come up with solution even many of them.</p>
+          <li ng-repeat='listItem in item.list'>{{ listItem }}</li>
         </ol>
       </div>
       <a href='./firststep.html'>First Step</a>
-      <a href='./secondstep.html'>Second Step</a>
+      <a href='./index.html'>Home Page</a>
     </section>
     <section class='downloads'>
       <h3 class='dark heavy'>Downloads</h3>
@@ -62,7 +53,7 @@
     <div id='scripts'>
       <script src='./public/scripts/angular.min.js'></script>
       <script src='./public/scripts/app.min.js'></script>
-      <script src='./public/scripts/app.index.min.js'></script>
+      <script src='./public/scripts/app.secondstep.min.js'></script>
     </div>
   </body>
 </html>
